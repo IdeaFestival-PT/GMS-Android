@@ -12,153 +12,193 @@
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.145"/>
+        app:layout_constraintGuide_percent="0.145" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/logoGuideRight"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.85"/>
+        app:layout_constraintGuide_percent="0.85" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/logoGuideTop"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.06"/>
+        app:layout_constraintGuide_percent="0.06" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/logoGuideBottom"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.375"/>
+        app:layout_constraintGuide_percent="0.375" />
 
     <!-- idEditText -->
     <EditText
+        android:id="@+id/idEditText"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/edittext_box"
-        android:hint=""
-        app:layout_constraintStart_toStartOf="@id/idEditTextGuideLeft"
+        android:hint="@string/id"
+        android:textColorHint="@color/gray"
+        app:layout_constraintBottom_toBottomOf="@id/idEditTextGuideBottom"
         app:layout_constraintEnd_toEndOf="@id/idEditTextGuideRight"
-        app:layout_constraintTop_toBottomOf="@id/idEditTextGuideTop"
-        app:layout_constraintBottom_toBottomOf="@id/idEditTextGuideBottom"/>
+        app:layout_constraintStart_toStartOf="@id/idEditTextGuideLeft"
+        app:layout_constraintTop_toBottomOf="@id/idEditTextGuideTop" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/idEditTextGuideLeft"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.04"/>
+        app:layout_constraintGuide_percent="0.04" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/idEditTextGuideRight"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.96"/>
+        app:layout_constraintGuide_percent="0.96" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/idEditTextGuideTop"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.4"/>
+        app:layout_constraintGuide_percent="0.4" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/idEditTextGuideBottom"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.475"/>
+        app:layout_constraintGuide_percent="0.475" />
 
     <!-- passwordEditText -->
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/edittext_box"
+        android:hint="@string/password"
+        android:textColorHint="@color/gray"
+        app:layout_constraintBottom_toBottomOf="@id/passwordEditTextGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/passwordEditTextGuideRight"
+        app:layout_constraintStart_toStartOf="@id/passwordEditTextGuideLeft"
+        app:layout_constraintTop_toBottomOf="@id/passwordEditTextGuideTop" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/passwordEditTextGuideLeft"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.04"/>
+        app:layout_constraintGuide_percent="0.04" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/passwordEditTextGuideRight"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.96"/>
+        app:layout_constraintGuide_percent="0.96" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/passwordEditTextGuideTop"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.5"/>
+        app:layout_constraintGuide_percent="0.5" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/passwordEditTextGuideBottom"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.575"/>
+        app:layout_constraintGuide_percent="0.575" />
 
     <!-- loginBtn -->
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/black_background"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/loginBtnGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/loginBtnGuideRight"
+        app:layout_constraintStart_toStartOf="@id/loginBtnGuideLeft"
+        app:layout_constraintTop_toBottomOf="@id/loginBtnGuideTop" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/loginBtnGuideLeft"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.04"/>
+        app:layout_constraintGuide_percent="0.04" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/loginBtnGuideRight"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.96"/>
+        app:layout_constraintGuide_percent="0.96" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/loginBtnGuideTop"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.605"/>
+        app:layout_constraintGuide_percent="0.605" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/loginBtnGuideBottom"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.67"/>
+        app:layout_constraintGuide_percent="0.67" />
 
     <!-- resetPasswordBtn -->
+    <Button
+        android:id="@+id/resetPasswordBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/gray_background"
+        android:text="@string/resetPassword"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/resetPasswordBtnGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/resetPasswordBtnGuideRight"
+        app:layout_constraintStart_toStartOf="@id/resetPasswordBtnGuideLeft"
+        app:layout_constraintTop_toBottomOf="@id/resetPasswordBtnGuideTop" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/resetPasswordBtnGuideLeft"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.315"/>
+        app:layout_constraintGuide_percent="0.315" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/resetPasswordBtnGuideRight"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.685"/>
+        app:layout_constraintGuide_percent="0.685" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/resetPasswordBtnGuideTop"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.68"/>
+        app:layout_constraintGuide_percent="0.68" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/resetPasswordBtnGuideBottom"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.707"/>
+        app:layout_constraintGuide_percent="0.707" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
