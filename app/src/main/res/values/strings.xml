@@ -4,9 +4,13 @@
     <string name="id">아이디(이메일)</string>
     <string name="password">비밀번호</string>
     <string name="login">로그인</string>
+    <string name="sign">회원가입</string>
+    <string name="setPassword">비밀번호 설정</string>
     <string name="resetPassword">비밀번호 재설정</string>
-
+    <string name="checkPassword">비밀번호 확인</string>
+    <string name="sendNember">인증번호 발송</string>
+    <string name="email">이메일 인증</string>
     <string name="loginEng">LOGIN</string>
-    <string name="sign">SIGN</string>
+    <string name="signEng">SIGN</string>
 
 </resources>
