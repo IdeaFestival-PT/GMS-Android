@@ -6,4 +6,285 @@
     android:layout_height="match_parent"
     tools:context=".SignUpActivity">
 
+    <!-- logo -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/logoGuideLeft"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.145" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/logoGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/logoGuideTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/logoGuideBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.375" />
+
+    <!-- signIdEditText -->
+    <EditText
+        android:id="@+id/signIdEditText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/edittext_box"
+        android:hint="@string/id"
+        android:paddingStart="20dp"
+        android:textColorHint="@color/gray"
+        app:layout_constraintBottom_toBottomOf="@id/signIdEditTextGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/signIdEditTextGuideRight"
+        app:layout_constraintStart_toStartOf="@id/signIdEditTextGuideLeft"
+        app:layout_constraintTop_toBottomOf="@id/signIdEditTextGuideTop" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/signIdEditTextGuideLeft"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/signIdEditTextGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/signIdEditTextGuideTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.41" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/signIdEditTextGuideBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.485" />
+
+    <!-- signEmailEditText -->
+    <EditText
+        android:id="@+id/signEmailEditText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/edittext_box"
+        android:hint="@string/email"
+        android:paddingStart="20dp"
+        android:textColorHint="@color/gray"
+        app:layout_constraintBottom_toBottomOf="@id/signEmailEditTextGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/signEmailEditTextGuideRight"
+        app:layout_constraintStart_toStartOf="@id/signEmailEditTextGuideLeft"
+        app:layout_constraintTop_toBottomOf="@id/signEmailEditTextGuideTop" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/signEmailEditTextGuideLeft"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/signEmailEditTextGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/signEmailEditTextGuideTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.515" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/signEmailEditTextGuideBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.59" />
+
+    <!-- signSentNumberBtn -->
+    <Button
+        android:id="@+id/signSentNumberBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/black_background"
+        android:text="@string/sendNember"
+        android:textColor="@color/gray_2"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@id/signSentNumberBtnGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/signSentNumberBtnGuideRight"
+        app:layout_constraintStart_toStartOf="@id/signSentNumberBtnGuideLeft"
+        app:layout_constraintTop_toBottomOf="@id/signSentNumberBtnGuideTop" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/signSentNumberBtnGuideLeft"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.68"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/signSentNumberBtnGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.93"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/signSentNumberBtnGuideTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.534"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/signSentNumberBtnGuideBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.57"/>
+
+    <!-- signSetPasswordEditText -->
+    <EditText
+        android:id="@+id/signSetPasswordEditText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/edittext_box"
+        android:hint="@string/setPassword"
+        android:paddingStart="20dp"
+        android:textColorHint="@color/gray"
+        app:layout_constraintBottom_toBottomOf="@id/signSetPasswordEditTextGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/signSetPasswordEditTextGuideRight"
+        app:layout_constraintStart_toStartOf="@id/signSetPasswordEditTextGuideLeft"
+        app:layout_constraintTop_toBottomOf="@id/signSetPasswordEditTextGuideTop" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/signSetPasswordEditTextGuideLeft"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/signSetPasswordEditTextGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/signSetPasswordEditTextGuideTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.617"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/signSetPasswordEditTextGuideBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.69"/>
+
+    <!-- signCheckPasswordEditText -->
+    <EditText
+        android:id="@+id/signCheckPasswordEditText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/edittext_box"
+        android:hint="@string/checkPassword"
+        android:paddingStart="20dp"
+        android:textColorHint="@color/gray"
+        app:layout_constraintBottom_toBottomOf="@id/signCheckPasswordEditTextGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/signCheckPasswordEditTextGuideRight"
+        app:layout_constraintStart_toStartOf="@id/signCheckPasswordEditTextGuideLeft"
+        app:layout_constraintTop_toBottomOf="@id/signCheckPasswordEditTextGuideTop" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/signCheckPasswordEditTextGuideLeft"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/signCheckPasswordEditTextGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/signCheckPasswordEditTextGuideTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.72" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/signCheckPasswordEditTextGuideBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.794" />
+
+    <!-- signBtn -->
+    <Button
+        android:id="@+id/signBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/black_background"
+        android:text="@string/sign"
+        android:textColor="@color/gray_2"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/signBtnGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/signBtnGuideRight"
+        app:layout_constraintStart_toStartOf="@id/signBtnGuideLeft"
+        app:layout_constraintTop_toBottomOf="@id/signBtnGuideTop" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/signBtnGuideLeft"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/signBtnGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/signBtnGuideTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.833" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/signBtnGuideBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.898" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
