@@ -6,30 +6,30 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
-    <!-- logo -->
+    <!-- LoginLogo -->
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/logoGuideLeft"
+        android:id="@+id/LoginLogoGuideLeft"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.145" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/logoGuideRight"
+        android:id="@+id/LoginLogoGuideRight"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.85" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/logoGuideTop"
+        android:id="@+id/LoginLogoGuideTop"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.06" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/logoGuideBottom"
+        android:id="@+id/LoginLogoGuideBottom"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="horizontal"
