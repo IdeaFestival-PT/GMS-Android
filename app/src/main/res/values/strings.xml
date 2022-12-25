@@ -12,5 +12,25 @@
     <string name="email">이메일 인증</string>
     <string name="loginEng">LOGIN</string>
     <string name="signEng">SIGN</string>
+    <string name="search">검색하기</string>
+    <string name="category">ㆍ&#160;Category</string>
+    <string name="location">ㆍ&#160;location</string>
+    <string name="koreanFood">한&#160;식</string>
+    <string name="chineseFood">중&#160;식</string>
+    <string name="westernFood">양&#160;식</string>
+    <string name="japaneseFood">일&#160;식</string>
+    <string name="seoul">서울</string>
+    <string name="busan">부산</string>
+    <string name="yeosuSuncheon">여수/순천</string>
+    <string name="seongnam">성남</string>
+    <string name="incheon">인천</string>
+    <string name="daegu">대구</string>
+    <string name="mokpoNaju">목포/나주</string>
+    <string name="jeonju">전주</string>
+    <string name="gwangju">광주</string>
+    <string name="ulsan">울산</string>
+    <string name="suwonHwaseong">수원/화성</string>
+    <string name="jeju">제주</string>
+    <string name="todayRestaurant">오늘의&#160;맛집</string>
 
 </resources>
