@@ -7,6 +7,10 @@ android {
     namespace 'com.project.gms'
     compileSdk 32
 
+    buildFeatures {
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId "com.project.gms"
         minSdk 21
