@@ -8,7 +8,7 @@
     <string name="setPassword">비밀번호 설정</string>
     <string name="resetPassword">비밀번호 재설정</string>
     <string name="checkPassword">비밀번호 확인</string>
-    <string name="sendNember">인증번호 발송</string>
+    <string name="sendNumber">인증번호 발송</string>
     <string name="email">이메일 인증</string>
     <string name="loginEng">LOGIN</string>
     <string name="signEng">SIGN</string>

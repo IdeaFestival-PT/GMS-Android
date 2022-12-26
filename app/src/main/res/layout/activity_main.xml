@@ -6,30 +6,30 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!-- logo -->
+    <!-- mainLogo -->
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/logoGuideLeft"
+        android:id="@+id/mainLogoGuideLeft"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.15" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/logoGuideRight"
+        android:id="@+id/mainLogoGuideRight"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.845" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/logoGuideTop"
+        android:id="@+id/mainLogoGuideTop"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.105" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/logoGuideBottom"
+        android:id="@+id/mainLogoGuideBottom"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="horizontal"
