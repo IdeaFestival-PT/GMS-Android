@@ -3,6 +3,7 @@ package com.project.gms
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import com.project.gms.databinding.ActivityMainBinding
 

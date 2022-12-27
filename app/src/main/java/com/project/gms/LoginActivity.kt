@@ -13,6 +13,9 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
+        val loginId = binding.idEditText.text.toString()
+        val loginPassword = binding.passwordEditText.text.toString()
+
         binding.resetPasswordBtn.setOnClickListener {
             val intent = Intent(this, ReLoginActivity::class.java)
             startActivity(intent)
