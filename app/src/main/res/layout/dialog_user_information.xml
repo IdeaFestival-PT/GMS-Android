@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="550dp">
+
+    <!-- userBackgroundImage -->
+    <ImageView
+        android:id="@+id/userBackgroundImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/user_background_image"
+        app:layout_constraintBottom_toBottomOf="@id/userBackgroundImageGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/userBackgroundImageGuideRight"
+        app:layout_constraintStart_toStartOf="@id/userBackgroundImageGuideLeft"
+        app:layout_constraintTop_toTopOf="@id/userBackgroundImageGuideTop" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/userBackgroundImageGuideLeft"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/userBackgroundImageGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.93" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/userBackgroundImageGuideTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/userBackgroundImageGuideBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.97" />
+
+    <!-- userImage -->
+    <ImageView
+        android:id="@+id/userImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/user_image"
+        app:layout_constraintBottom_toBottomOf="@id/userImageGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/userImageGuideRight"
+        app:layout_constraintStart_toStartOf="@id/userImageGuideLeft"
+        app:layout_constraintTop_toTopOf="@id/userImageGuideTop" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/userImageGuideLeft"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.205" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/userImageGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/userImageGuideTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.14" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/userImageGuideBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.595" />
+
+    <!-- userIdImage -->
+    <ImageView
+        android:id="@+id/userIdImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/user_id_image"
+        app:layout_constraintBottom_toBottomOf="@id/userIdImageGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/userIdImageGuideRight"
+        app:layout_constraintStart_toStartOf="@id/userIdImageGuideLeft"
+        app:layout_constraintTop_toTopOf="@id/userIdImageGuideTop" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/userIdImageGuideLeft"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.18" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/userIdImageGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.275" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/userIdImageGuideTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.61" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/userIdImageGuideBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.69" />
+
+    <!-- userEmailText -->
+    <TextView
+        android:id="@+id/userEmailText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@id/userEmailTextGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/userEmailTextGuideRight"
+        app:layout_constraintStart_toStartOf="@id/userEmailTextGuideLeft"
+        app:layout_constraintTop_toTopOf="@id/userEmailTextGuideTop" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/userEmailTextGuideLeft"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.285" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/userEmailTextGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/userEmailTextGuideTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.617" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/userEmailTextGuideBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.69" />
+
+    <!-- logoutBtn -->
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/red_background"
+        android:text="@string/logout"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/logoutBtnGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/logoutBtnGuideRight"
+        app:layout_constraintStart_toStartOf="@id/logoutBtnGuideLeft"
+        app:layout_constraintTop_toTopOf="@id/logoutBtnGuideTop" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/logoutBtnGuideLeft"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.18" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/logoutBtnGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.83" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/logoutBtnGuideTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.775" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/logoutBtnGuideBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.865" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

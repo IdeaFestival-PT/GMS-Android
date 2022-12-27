@@ -7,33 +7,71 @@
     tools:context=".MainActivity">
 
     <!-- mainLogo -->
+    <ImageView
+        android:id="@+id/mainLogo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/gms_logo"
+        app:layout_constraintStart_toStartOf="@id/mainLogoGuideLeft"
+        app:layout_constraintEnd_toEndOf="@id/mainLogoGuideRight"
+        app:layout_constraintTop_toTopOf="@id/mainLogoGuideTop"
+        app:layout_constraintBottom_toTopOf="@id/gmsText"/>
+
+    <TextView
+        android:id="@+id/gmsText"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:text="@string/gmsText"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/mainLogoGuideLeft"
+        app:layout_constraintEnd_toEndOf="@id/mainLogoGuideRight"
+        app:layout_constraintTop_toBottomOf="@id/mainLogo"
+        app:layout_constraintBottom_toBottomOf="@id/gmsText2"/>
+
+    <TextView
+        android:id="@+id/gmsText2"
+        android:layout_width="0dp"
+        android:layout_height="15dp"
+        android:text="@string/gmsText2"
+        android:gravity="center"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/mainLogoGuideLeft"
+        app:layout_constraintEnd_toEndOf="@id/mainLogoGuideRight"
+        app:layout_constraintTop_toBottomOf="@id/gmsText"
+        app:layout_constraintBottom_toBottomOf="@id/mainLogoGuideBottom"/>
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/mainLogoGuideLeft"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.15" />
+        app:layout_constraintGuide_percent="0.34" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/mainLogoGuideRight"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.845" />
+        app:layout_constraintGuide_percent="0.664" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/mainLogoGuideTop"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.105" />
+        app:layout_constraintGuide_percent="0.16" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/mainLogoGuideBottom"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.42" />
+        app:layout_constraintGuide_percent="0.335" />
 
     <!-- goLoginBtn -->
     <Button

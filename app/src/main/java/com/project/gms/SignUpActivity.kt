@@ -1,20 +1,19 @@
 package com.project.gms
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.navigation.NavController
+import androidx.navigation.fragment.findNavController
 import com.project.gms.databinding.ActivitySignUpBinding
+import java.security.AccessController
 
 class SignUpActivity : AppCompatActivity() {
-    private lateinit var binding: ActivitySignUpBinding
+    lateinit var navController: NavController
     override fun onCreate(savedInstanceState: Bundle?) {
-        binding = ActivitySignUpBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_sign_up)
 
-        binding.signBtn.setOnClickListener {
-            val intent = Intent(this, LoginActivity::class.java)
-            startActivity(intent)
-        }
+        navController =
+            supportFragmentManager.findFragmentById(R.id.nav_host_fragment_email)!!.findNavController()
     }
 }

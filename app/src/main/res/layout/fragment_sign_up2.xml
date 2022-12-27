@@ -4,251 +4,207 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ReLoginActivity">
+    tools:context=".fragment.SignUpFragment2">
 
-    <!-- reLoginLogo -->
+    <!-- signLogo -->
     <ImageView
-        android:id="@+id/reLoginLogo"
+        android:id="@+id/signLogo"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/gms_logo"
-        app:layout_constraintStart_toStartOf="@id/reLoginLogoGuideLeft"
-        app:layout_constraintEnd_toEndOf="@id/reLoginLogoGuideRight"
-        app:layout_constraintTop_toTopOf="@id/reLoginLogoGuideTop"
-        app:layout_constraintBottom_toTopOf="@id/gmsText"/>
+        app:layout_constraintBottom_toTopOf="@id/gmsText"
+        app:layout_constraintEnd_toEndOf="@id/signLogoGuideRight"
+        app:layout_constraintStart_toStartOf="@id/signLogoGuideLeft"
+        app:layout_constraintTop_toTopOf="@id/signLogoGuideTop" />
 
     <TextView
         android:id="@+id/gmsText"
         android:layout_width="0dp"
         android:layout_height="35dp"
-        android:text="@string/gmsText"
         android:gravity="center"
+        android:text="@string/gmsText"
+        android:textColor="@color/black"
         android:textSize="30dp"
         android:textStyle="bold"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="@id/reLoginLogoGuideLeft"
-        app:layout_constraintEnd_toEndOf="@id/reLoginLogoGuideRight"
-        app:layout_constraintTop_toBottomOf="@id/reLoginLogo"
-        app:layout_constraintBottom_toBottomOf="@id/gmsText2"/>
+        app:layout_constraintBottom_toBottomOf="@id/gmsText2"
+        app:layout_constraintEnd_toEndOf="@id/signLogoGuideRight"
+        app:layout_constraintStart_toStartOf="@id/signLogoGuideLeft"
+        app:layout_constraintTop_toBottomOf="@id/signLogo" />
 
     <TextView
         android:id="@+id/gmsText2"
         android:layout_width="0dp"
         android:layout_height="15dp"
-        android:text="@string/gmsText2"
         android:gravity="center"
+        android:text="@string/gmsText2"
+        android:textColor="@color/black"
         android:textSize="10dp"
         android:textStyle="bold"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="@id/reLoginLogoGuideLeft"
-        app:layout_constraintEnd_toEndOf="@id/reLoginLogoGuideRight"
-        app:layout_constraintTop_toBottomOf="@id/gmsText"
-        app:layout_constraintBottom_toBottomOf="@id/reLoginLogoGuideBottom"/>
+        app:layout_constraintBottom_toBottomOf="@id/signLogoGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/signLogoGuideRight"
+        app:layout_constraintStart_toStartOf="@id/signLogoGuideLeft"
+        app:layout_constraintTop_toBottomOf="@id/gmsText" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/reLoginLogoGuideLeft"
+        android:id="@+id/signLogoGuideLeft"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.34" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/reLoginLogoGuideRight"
+        android:id="@+id/signLogoGuideRight"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.664" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/reLoginLogoGuideTop"
+        android:id="@+id/signLogoGuideTop"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.14" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/reLoginLogoGuideBottom"
+        android:id="@+id/signLogoGuideBottom"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.315" />
 
-    <!-- reLoginIdEditText -->
+    <!-- classNumberEditText -->
     <EditText
-        android:id="@+id/reLoginIdEditText"
+        android:id="@+id/classNumberEditText"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/edittext_box"
-        android:hint="@string/id"
+        android:hint="@string/classNumber"
         android:paddingStart="20dp"
         android:textColorHint="@color/gray"
         android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="@id/reLoginIdEditTextGuideBottom"
-        app:layout_constraintEnd_toEndOf="@id/reLoginIdEditTextGuideRight"
-        app:layout_constraintStart_toStartOf="@id/reLoginIdEditTextGuideLeft"
-        app:layout_constraintTop_toBottomOf="@id/reLoginIdEditTextGuideTop" />
-
+        app:layout_constraintBottom_toBottomOf="@id/classNumberEditTextGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/classNumberEditTextGuideRight"
+        app:layout_constraintStart_toStartOf="@id/classNumberEditTextGuideLeft"
+        app:layout_constraintTop_toBottomOf="@id/classNumberEditTextGuideTop" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/reLoginIdEditTextGuideLeft"
+        android:id="@+id/classNumberEditTextGuideLeft"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.04" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/reLoginIdEditTextGuideRight"
+        android:id="@+id/classNumberEditTextGuideRight"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.96" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/reLoginIdEditTextGuideTop"
+        android:id="@+id/classNumberEditTextGuideTop"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.41" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/reLoginIdEditTextGuideBottom"
+        android:id="@+id/classNumberEditTextGuideBottom"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.485" />
 
-    <!-- reLoginEmailEditText -->
+    <!-- nameEditText -->
     <EditText
-        android:id="@+id/reLoginEmailEditText"
+        android:id="@+id/nameEditText"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/edittext_box"
-        android:hint="@string/email"
+        android:hint="@string/name"
         android:paddingStart="20dp"
         android:textColorHint="@color/gray"
         android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="@id/reLoginEmailEditTextGuideBottom"
-        app:layout_constraintEnd_toEndOf="@id/reLoginEmailEditTextGuideRight"
-        app:layout_constraintStart_toStartOf="@id/reLoginEmailEditTextGuideLeft"
-        app:layout_constraintTop_toBottomOf="@id/reLoginEmailEditTextGuideTop" />
+        app:layout_constraintBottom_toBottomOf="@id/nameEditTextGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/nameEditTextGuideRight"
+        app:layout_constraintStart_toStartOf="@id/nameEditTextGuideLeft"
+        app:layout_constraintTop_toBottomOf="@id/nameEditTextGuideTop" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/reLoginEmailEditTextGuideLeft"
+        android:id="@+id/nameEditTextGuideLeft"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.04" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/reLoginEmailEditTextGuideRight"
+        android:id="@+id/nameEditTextGuideRight"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.96" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/reLoginEmailEditTextGuideTop"
+        android:id="@+id/nameEditTextGuideTop"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.515" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/reLoginEmailEditTextGuideBottom"
+        android:id="@+id/nameEditTextGuideBottom"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.585" />
 
-    <!-- reLoginSentNumberBtn -->
-    <Button
-        android:id="@+id/reLoginSentNumberBtn"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@drawable/black_background"
-        android:text="@string/sendNumber"
-        android:textColor="@color/gray2"
-        android:textSize="12dp"
-        app:layout_constraintBottom_toBottomOf="@id/reLoginSentNumberBtnGuideBottom"
-        app:layout_constraintEnd_toEndOf="@id/reLoginSentNumberBtnGuideRight"
-        app:layout_constraintStart_toStartOf="@id/reLoginSentNumberBtnGuideLeft"
-        app:layout_constraintTop_toBottomOf="@id/reLoginSentNumberBtnGuideTop"
-        tools:ignore="TouchTargetSizeCheck" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/reLoginSentNumberBtnGuideLeft"
-        android:layout_width="match_parent"
-        android:layout_height="0.1dp"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.68" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/reLoginSentNumberBtnGuideRight"
-        android:layout_width="match_parent"
-        android:layout_height="0.1dp"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.93" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/reLoginSentNumberBtnGuideTop"
-        android:layout_width="match_parent"
-        android:layout_height="0.1dp"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.534" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/reLoginSentNumberBtnGuideBottom"
-        android:layout_width="match_parent"
-        android:layout_height="0.1dp"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.57" />
-
-    <!-- reLoginReSetPasswordEditText -->
+    <!-- signSetPasswordEditText -->
     <EditText
-        android:id="@+id/reLoginReSetPasswordEditText"
+        android:id="@+id/signSetPasswordEditText"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/edittext_box"
-        android:hint="@string/resetPassword"
+        android:hint="@string/setPassword"
         android:paddingStart="20dp"
         android:textColorHint="@color/gray"
         android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="@id/reLoginReSetPasswordEditTextGuideBottom"
-        app:layout_constraintEnd_toEndOf="@id/reLoginReSetPasswordEditTextGuideRight"
-        app:layout_constraintStart_toStartOf="@id/reLoginReSetPasswordEditTextGuideLeft"
-        app:layout_constraintTop_toBottomOf="@id/reLoginReSetPasswordEditTextGuideTop" />
+        app:layout_constraintBottom_toBottomOf="@id/signSetPasswordEditTextGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/signSetPasswordEditTextGuideRight"
+        app:layout_constraintStart_toStartOf="@id/signSetPasswordEditTextGuideLeft"
+        app:layout_constraintTop_toBottomOf="@id/signSetPasswordEditTextGuideTop" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/reLoginReSetPasswordEditTextGuideLeft"
+        android:id="@+id/signSetPasswordEditTextGuideLeft"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.04" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/reLoginReSetPasswordEditTextGuideRight"
+        android:id="@+id/signSetPasswordEditTextGuideRight"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.96" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/reLoginReSetPasswordEditTextGuideTop"
+        android:id="@+id/signSetPasswordEditTextGuideTop"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.617" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/reLoginReSetPasswordEditTextGuideBottom"
+        android:id="@+id/signSetPasswordEditTextGuideBottom"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.69" />
 
-    <!-- reLoginCheckPasswordEditText -->
+    <!-- signCheckPasswordEditText -->
     <EditText
-        android:id="@+id/reLoginCheckPasswordEditText"
+        android:id="@+id/signCheckPasswordEditText"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/edittext_box"
@@ -256,79 +212,80 @@
         android:paddingStart="20dp"
         android:textColorHint="@color/gray"
         android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="@id/reLoginCheckPasswordEditTextGuideBottom"
-        app:layout_constraintEnd_toEndOf="@id/reLoginCheckPasswordEditTextGuideRight"
-        app:layout_constraintStart_toStartOf="@id/reLoginCheckPasswordEditTextGuideLeft"
-        app:layout_constraintTop_toBottomOf="@id/reLoginCheckPasswordEditTextGuideTop" />
+        app:layout_constraintBottom_toBottomOf="@id/signCheckPasswordEditTextGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/signCheckPasswordEditTextGuideRight"
+        app:layout_constraintStart_toStartOf="@id/signCheckPasswordEditTextGuideLeft"
+        app:layout_constraintTop_toBottomOf="@id/signCheckPasswordEditTextGuideTop" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/reLoginCheckPasswordEditTextGuideLeft"
+        android:id="@+id/signCheckPasswordEditTextGuideLeft"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.04" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/reLoginCheckPasswordEditTextGuideRight"
+        android:id="@+id/signCheckPasswordEditTextGuideRight"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.96" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/reLoginCheckPasswordEditTextGuideTop"
+        android:id="@+id/signCheckPasswordEditTextGuideTop"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.72" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/reLoginCheckPasswordEditTextGuideBottom"
+        android:id="@+id/signCheckPasswordEditTextGuideBottom"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.794" />
 
-    <!-- loginBtn -->
+    <!-- signBtn -->
     <Button
-        android:id="@+id/loginBtn"
+        android:id="@+id/signBtn"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/black_background"
-        android:text="@string/login"
+        android:text="@string/sign"
         android:textColor="@color/gray2"
         android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="@id/loginBtnGuideBottom"
-        app:layout_constraintEnd_toEndOf="@id/loginBtnGuideRight"
-        app:layout_constraintStart_toStartOf="@id/loginBtnGuideLeft"
-        app:layout_constraintTop_toBottomOf="@id/loginBtnGuideTop" />
+        app:layout_constraintBottom_toBottomOf="@id/signBtnGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/signBtnGuideRight"
+        app:layout_constraintStart_toStartOf="@id/signBtnGuideLeft"
+        app:layout_constraintTop_toBottomOf="@id/signBtnGuideTop" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/loginBtnGuideLeft"
+        android:id="@+id/signBtnGuideLeft"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.04" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/loginBtnGuideRight"
+        android:id="@+id/signBtnGuideRight"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.96" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/loginBtnGuideTop"
+        android:id="@+id/signBtnGuideTop"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.84" />
+        app:layout_constraintGuide_percent="0.833" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/loginBtnGuideBottom"
+        android:id="@+id/signBtnGuideBottom"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.905" />
+        app:layout_constraintGuide_percent="0.898" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
