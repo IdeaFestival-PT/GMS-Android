@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RestaurantRecyclerViewActivity">
+
+    <!-- listLogo -->
+    <ImageView
+        android:id="@+id/listLogo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/gms_logo"
+        app:layout_constraintStart_toStartOf="@id/listLogoGuideLeft"
+        app:layout_constraintEnd_toEndOf="@id/listLogoGuideRight"
+        app:layout_constraintTop_toTopOf="@id/listLogoGuideTop"
+        app:layout_constraintBottom_toTopOf="@id/gmsText"/>
+
+    <TextView
+        android:id="@+id/gmsText"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:text="@string/gmsText"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/listLogoGuideLeft"
+        app:layout_constraintEnd_toEndOf="@id/listLogoGuideRight"
+        app:layout_constraintTop_toBottomOf="@id/listLogo"
+        app:layout_constraintBottom_toBottomOf="@id/gmsText2"/>
+
+    <TextView
+        android:id="@+id/gmsText2"
+        android:layout_width="0dp"
+        android:layout_height="15dp"
+        android:text="@string/gmsText2"
+        android:gravity="center"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/listLogoGuideLeft"
+        app:layout_constraintEnd_toEndOf="@id/listLogoGuideRight"
+        app:layout_constraintTop_toBottomOf="@id/gmsText"
+        app:layout_constraintBottom_toBottomOf="@id/listLogoGuideBottom"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/listLogoGuideLeft"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.34" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/listLogoGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.664" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/listLogoGuideTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.095" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/listLogoGuideBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.27" />
+
+    <!-- list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
+        tools:listitem="@layout/item_recycler"
+        app:layout_constraintStart_toStartOf="@id/listGuideLeft"
+        app:layout_constraintEnd_toEndOf="@id/listGuideRight"
+        app:layout_constraintTop_toTopOf="@id/listGuideTop"
+        app:layout_constraintBottom_toBottomOf="@id/listGuideBottom"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/listGuideLeft"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/listGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.97"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/listGuideTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.34"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/listGuideBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.905"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

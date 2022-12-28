@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".RecyclerDetailActivity">
+
+    <!-- restaurantNameText -->
+    <TextView
+        android:id="@+id/restaurantNameText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:text="@string/name"
+        android:textColor="@color/white"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/restaurantNameTextGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/restaurantNameTextGuideRight"
+        app:layout_constraintStart_toStartOf="@id/restaurantNameTextGuideLeft"
+        app:layout_constraintTop_toBottomOf="@id/restaurantNameTextGuideTop" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/restaurantNameTextGuideLeft"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.03" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/restaurantNameTextGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.97" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/restaurantNameTextGuideTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.03" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/restaurantNameTextGuideBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <!-- restaurantDetailImage -->
+    <ImageView
+        android:id="@+id/restaurantDetailImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/gray_background"
+        app:layout_constraintBottom_toBottomOf="@id/restaurantDetailImageGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/restaurantDetailImageGuideRight"
+        app:layout_constraintStart_toStartOf="@id/restaurantDetailImageGuideLeft"
+        app:layout_constraintTop_toTopOf="@id/restaurantDetailImageGuideTop" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/restaurantDetailImageGuideLeft"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.03" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/restaurantDetailImageGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.97" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/restaurantDetailImageGuideTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.075" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/restaurantDetailImageGuideBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.301" />
+
+    <!-- foodText -->
+    <TextView
+        android:id="@+id/foodText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="음식 종류"
+        android:textSize="14dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/foodTextGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/foodTextGuideRight"
+        app:layout_constraintStart_toStartOf="@id/foodTextGuideLeft"
+        app:layout_constraintTop_toTopOf="@id/foodTextGuideTop" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/foodTextGuideLeft"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.03" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/foodTextGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.97" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/foodTextGuideTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.315" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/foodTextGuideBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.335" />
+
+    <!-- restaurantDetailPhoneNumber -->
+    <TextView
+        android:id="@+id/restaurantDetailPhoneNumber"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="전화번호"
+        android:textSize="14dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/restaurantDetailPhoneNumberGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/restaurantDetailPhoneNumberGuideRight"
+        app:layout_constraintStart_toStartOf="@id/restaurantDetailPhoneNumberGuideLeft"
+        app:layout_constraintTop_toTopOf="@id/restaurantDetailPhoneNumberGuideTop" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/restaurantDetailPhoneNumberGuideLeft"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.03" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/restaurantDetailPhoneNumberGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.97" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/restaurantDetailPhoneNumberGuideTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.338" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/restaurantDetailPhoneNumberGuideBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.358" />
+
+    <!-- mapText -->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:text="MAP"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/mapTextGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/mapTextGuideRight"
+        app:layout_constraintStart_toStartOf="@id/mapTextGuideLeft"
+        app:layout_constraintTop_toTopOf="@id/mapTextGuideTop" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/mapTextGuideLeft"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/mapTextGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.19" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/mapTextGuideTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/mapTextGuideBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.43" />
+
+    <!-- map -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/mapGuideLeft"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.03" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/mapGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.97" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/mapGuideTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.433" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/mapGuideBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.687" />
+
+    <!-- detailBackgroundImage -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/detail_background"
+        app:layout_constraintTop_toTopOf="@id/detailBackgroundImageGuideTop"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/detailBackgroundImageGuideTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.71"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
