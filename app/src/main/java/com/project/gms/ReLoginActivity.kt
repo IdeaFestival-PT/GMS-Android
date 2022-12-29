@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.project.gms.databinding.ActivityLoginBinding
 import com.project.gms.databinding.ActivityReLoginBinding
+import java.util.Random
+
 
 class ReLoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityReLoginBinding
