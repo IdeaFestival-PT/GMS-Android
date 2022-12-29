@@ -15,6 +15,10 @@
             app:destination="@id/signUpFragment2"
             app:popUpTo="@id/signUpFragment1"
             />
+        <argument
+            android:name="email"
+            app:argType="string"
+            />
     </fragment>
     <fragment
         android:id="@+id/signUpFragment2"
