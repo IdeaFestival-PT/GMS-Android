@@ -4,18 +4,25 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.View
-import android.widget.RadioButton
-
 import com.project.gms.databinding.ActivitySearchBinding
+import java.util.*
 
 class SearchActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySearchBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = ActivitySearchBinding.inflate(layoutInflater)
-
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+
+        val random = Random()
+        var num = random.nextInt(4)
+
+        when(num){
+            0 -> binding.searchBackgroundImage.setImageResource(R.drawable.search_background_image1)
+            1 -> binding.searchBackgroundImage.setImageResource(R.drawable.search_background_image2)
+            2 -> binding.searchBackgroundImage.setImageResource(R.drawable.search_background_image3)
+            3 -> binding.searchBackgroundImage.setImageResource(R.drawable.search_background_image4)
+        }
 
         binding.myInformationBtn.bringToFront()
 

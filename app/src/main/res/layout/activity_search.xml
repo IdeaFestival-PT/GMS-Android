@@ -47,6 +47,13 @@
         app:layout_constraintGuide_percent="0.025" />
 
     <!-- searchBackgroundImage -->
+    <ImageView
+        android:id="@+id/searchBackgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@id/searchBackgroundImageGuideBottom"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/searchBackgroundImageGuideBottom"
@@ -54,15 +61,6 @@
         android:layout_height="0.1dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.313" />
-
-    <ImageView
-        android:id="@+id/searchBackgroundImage"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:background="@color/gray"
-        app:layout_constraintBottom_toBottomOf="@id/searchBackgroundImageGuideBottom"
-        app:layout_constraintTop_toTopOf="parent" />
-
 
     <!-- searchImage -->
     <ImageView
@@ -196,7 +194,7 @@
         android:layout_height="0dp"
         android:background="@drawable/check_box_background"
         android:button="@null"
-        android:drawableTop="@drawable/white_circle"
+        android:drawableTop="@drawable/food_image1"
         android:gravity="center"
         android:paddingTop="10dp"
         android:paddingBottom="20dp"
@@ -243,7 +241,7 @@
         android:layout_height="0dp"
         android:background="@drawable/check_box_background"
         android:button="@null"
-        android:drawableTop="@drawable/white_circle"
+        android:drawableTop="@drawable/food_image2"
         android:gravity="center"
         android:paddingTop="10dp"
         android:paddingBottom="20dp"
@@ -290,7 +288,7 @@
         android:layout_height="0dp"
         android:background="@drawable/check_box_background"
         android:button="@null"
-        android:drawableTop="@drawable/white_circle"
+        android:drawableTop="@drawable/food_image3"
         android:gravity="center"
         android:paddingTop="10dp"
         android:paddingBottom="20dp"
@@ -337,7 +335,7 @@
         android:layout_height="0dp"
         android:background="@drawable/check_box_background"
         android:button="@null"
-        android:drawableTop="@drawable/white_circle"
+        android:drawableTop="@drawable/food_image4"
         android:gravity="center"
         android:paddingTop="10dp"
         android:paddingBottom="20dp"

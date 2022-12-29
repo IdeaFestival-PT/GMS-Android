@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import com.project.gms.databinding.ActivityLoginBinding
+import java.util.Random
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
