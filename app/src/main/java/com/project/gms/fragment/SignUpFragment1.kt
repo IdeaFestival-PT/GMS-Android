@@ -8,6 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
+import com.project.gms.Communication.CommunicationWork
+import com.project.gms.DTO.EmailSendDTO
 import com.project.gms.R
 import com.project.gms.databinding.FragmentSignUp1Binding
 
@@ -30,12 +32,20 @@ class SignUpFragment1 : Fragment() {
 
         navController = requireActivity().findNavController(R.id.nav_host_fragment_email)
 
-        val signId = binding.signIdEditText.text.toString()
-        val signEmail = binding.signEmailEditText.text.toString()
-
-        binding.emailBtn.setOnClickListener {
-            navController.navigate(R.id.action_signUpFragment1_to_signUpFragment2)
+        binding.signSentNumberBtn.setOnClickListener {
+            val userEmailData = EmailSendDTO(
+                binding.signIdEditText.text.toString()
+            )
+            Log.d("TAG",userEmailData.toString())
+            val emailSendWork = CommunicationWork()
+            emailSendWork.sendEmail(userEmailData)
         }
 
+        binding.emailBtn.setOnClickListener {
+            val authKey = binding.signEmailEditText.text.toString()
+            val email = binding.signIdEditText.text.toString()
+            val retrofitWork = CommunicationWork()
+            retrofitWork.emailCodeSend(authKey, email, this)
+        }
     }
 }
