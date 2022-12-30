@@ -196,11 +196,11 @@
         android:button="@null"
         android:drawableTop="@drawable/food_image1"
         android:gravity="center"
-        android:paddingTop="10dp"
+        android:paddingTop="5dp"
         android:paddingBottom="20dp"
         android:text="@string/koreanFood"
         android:textColor="@color/white"
-        android:textSize="8dp"
+        android:textSize="7dp"
         app:layout_constraintBottom_toBottomOf="@id/koreanFoodCheckBoxGuideBottom"
         app:layout_constraintEnd_toEndOf="@id/koreanFoodCheckBoxGuideRight"
         app:layout_constraintStart_toStartOf="@id/koreanFoodCheckBoxGuideLeft"
@@ -243,11 +243,11 @@
         android:button="@null"
         android:drawableTop="@drawable/food_image2"
         android:gravity="center"
-        android:paddingTop="10dp"
+        android:paddingTop="5dp"
         android:paddingBottom="20dp"
         android:text="@string/chineseFood"
         android:textColor="@color/white"
-        android:textSize="8dp"
+        android:textSize="7dp"
         app:layout_constraintBottom_toBottomOf="@id/chineseFoodCheckBoxGuideBottom"
         app:layout_constraintEnd_toEndOf="@id/chineseFoodCheckBoxGuideRight"
         app:layout_constraintStart_toStartOf="@id/chineseFoodCheckBoxGuideLeft"
@@ -290,11 +290,11 @@
         android:button="@null"
         android:drawableTop="@drawable/food_image3"
         android:gravity="center"
-        android:paddingTop="10dp"
+        android:paddingTop="5dp"
         android:paddingBottom="20dp"
         android:text="@string/westernFood"
         android:textColor="@color/white"
-        android:textSize="8dp"
+        android:textSize="7dp"
         app:layout_constraintBottom_toBottomOf="@id/westernFoodCheckBoxGuideBottom"
         app:layout_constraintEnd_toEndOf="@id/westernFoodCheckBoxGuideRight"
         app:layout_constraintStart_toStartOf="@id/westernFoodCheckBoxGuideLeft"
@@ -337,11 +337,11 @@
         android:button="@null"
         android:drawableTop="@drawable/food_image4"
         android:gravity="center"
-        android:paddingTop="10dp"
+        android:paddingTop="5dp"
         android:paddingBottom="20dp"
         android:text="@string/japaneseFood"
         android:textColor="@color/white"
-        android:textSize="8dp"
+        android:textSize="7dp"
         app:layout_constraintBottom_toBottomOf="@id/japaneseFoodCheckBoxGuideBottom"
         app:layout_constraintEnd_toEndOf="@id/japaneseFoodCheckBoxGuideRight"
         app:layout_constraintStart_toStartOf="@id/japaneseFoodCheckBoxGuideLeft"
@@ -441,6 +441,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:button="@null"
+                    android:paddingLeft="45dp"
+
                     android:drawableLeft="@drawable/radio_btn_background"
                     android:drawablePadding="6dp"
                     android:text="@string/seoul"
@@ -471,18 +473,6 @@
                     android:textColor="@drawable/radio_btn_text"
                     android:textSize="10dp" />
 
-                <RadioButton
-                    android:id="@+id/seongnam"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:button="@null"
-                    android:drawableLeft="@drawable/radio_btn_background"
-                    android:drawablePadding="6dp"
-                    android:paddingLeft="45dp"
-                    android:text="@string/seongnam"
-                    android:textColor="@drawable/radio_btn_text"
-                    android:textSize="10dp" />
-
             </RadioGroup>
 
         </TableRow>
@@ -500,6 +490,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:button="@null"
+                    android:paddingLeft="45dp"
                     android:drawableLeft="@drawable/radio_btn_background"
                     android:drawablePadding="6dp"
                     android:text="@string/incheon"
@@ -530,18 +521,6 @@
                     android:textColor="@drawable/radio_btn_text"
                     android:textSize="10dp" />
 
-                <RadioButton
-                    android:id="@+id/jeonju"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:button="@null"
-                    android:drawableLeft="@drawable/radio_btn_background"
-                    android:drawablePadding="6dp"
-                    android:paddingLeft="45dp"
-                    android:text="@string/jeonju"
-                    android:textColor="@drawable/radio_btn_text"
-                    android:textSize="10dp" />
-
             </RadioGroup>
 
         </TableRow>
@@ -559,6 +538,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:button="@null"
+                    android:paddingLeft="45dp"
+
                     android:drawableLeft="@drawable/radio_btn_background"
                     android:drawablePadding="6dp"
                     android:text="@string/gwangju"
@@ -586,6 +567,42 @@
                     android:drawablePadding="6dp"
                     android:paddingLeft="45dp"
                     android:text="@string/suwonHwaseong"
+                    android:textColor="@drawable/radio_btn_text"
+                    android:textSize="10dp" />
+
+            </RadioGroup>
+
+        </TableRow>
+        <TableRow>
+
+            <RadioGroup
+                android:id="@+id/areaChoiceRadioGroupLine4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <RadioButton
+                    android:id="@+id/seongnam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/radio_btn_background"
+                    android:drawablePadding="6dp"
+                    android:paddingLeft="45dp"
+                    android:text="@string/seongnam"
+                    android:textColor="@drawable/radio_btn_text"
+                    android:textSize="10dp" />
+
+                <RadioButton
+                    android:id="@+id/jeonju"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/radio_btn_background"
+                    android:drawablePadding="6dp"
+                    android:paddingLeft="45dp"
+                    android:text="@string/jeonju"
                     android:textColor="@drawable/radio_btn_text"
                     android:textSize="10dp" />
 
@@ -633,7 +650,7 @@
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.74" />
+        app:layout_constraintGuide_percent="0.78" />
 
     <!-- leftTextCover -->
     <TextView
@@ -694,14 +711,14 @@
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.34" />
+        app:layout_constraintGuide_percent="0.33" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/todayRestaurantTextGuideRight"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.615" />
+        app:layout_constraintGuide_percent="0.63" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/todayRestaurantTextGuideTop"

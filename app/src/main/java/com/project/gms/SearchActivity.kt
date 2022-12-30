@@ -42,24 +42,21 @@ class SearchActivity : AppCompatActivity() {
                     if(binding.seoul.isChecked) {
                         binding.areaChoiceRadioGroupLine2.clearCheck()
                         binding.areaChoiceRadioGroupLine3.clearCheck()
+                        binding.areaChoiceRadioGroupLine4.clearCheck()
                     }
                 }
                 R.id.busan -> {
                     if(binding.busan.isChecked) {
                         binding.areaChoiceRadioGroupLine2.clearCheck()
                         binding.areaChoiceRadioGroupLine3.clearCheck()
+                        binding.areaChoiceRadioGroupLine4.clearCheck()
                     }
                 }
                 R.id.yeosuSuncheon -> {
                     if(binding.yeosuSuncheon.isChecked) {
                         binding.areaChoiceRadioGroupLine2.clearCheck()
                         binding.areaChoiceRadioGroupLine3.clearCheck()
-                    }
-                }
-                R.id.seongnam -> {
-                    if(binding.seongnam.isChecked) {
-                        binding.areaChoiceRadioGroupLine2.clearCheck()
-                        binding.areaChoiceRadioGroupLine3.clearCheck()
+                        binding.areaChoiceRadioGroupLine4.clearCheck()
                     }
                 }
             }
@@ -70,24 +67,21 @@ class SearchActivity : AppCompatActivity() {
                     if(binding.incheon.isChecked) {
                         binding.areaChoiceRadioGroupLine1.clearCheck()
                         binding.areaChoiceRadioGroupLine3.clearCheck()
+                        binding.areaChoiceRadioGroupLine4.clearCheck()
                     }
                 }
                 R.id.daegu -> {
                     if(binding.daegu.isChecked) {
                         binding.areaChoiceRadioGroupLine1.clearCheck()
                         binding.areaChoiceRadioGroupLine3.clearCheck()
+                        binding.areaChoiceRadioGroupLine4.clearCheck()
                     }
                 }
                 R.id.mokpoNaju -> {
                     if(binding.mokpoNaju.isChecked) {
                         binding.areaChoiceRadioGroupLine1.clearCheck()
                         binding.areaChoiceRadioGroupLine3.clearCheck()
-                    }
-                }
-                R.id.jeonju -> {
-                    if(binding.jeonju.isChecked) {
-                        binding.areaChoiceRadioGroupLine1.clearCheck()
-                        binding.areaChoiceRadioGroupLine3.clearCheck()
+                        binding.areaChoiceRadioGroupLine4.clearCheck()
                     }
                 }
             }
@@ -98,24 +92,47 @@ class SearchActivity : AppCompatActivity() {
                     if(binding.gwangju.isChecked) {
                         binding.areaChoiceRadioGroupLine1.clearCheck()
                         binding.areaChoiceRadioGroupLine2.clearCheck()
+                        binding.areaChoiceRadioGroupLine4.clearCheck()
                     }
                 }
                 R.id.ulsan -> {
                     if(binding.ulsan.isChecked) {
                         binding.areaChoiceRadioGroupLine1.clearCheck()
                         binding.areaChoiceRadioGroupLine2.clearCheck()
+                        binding.areaChoiceRadioGroupLine4.clearCheck()
                     }
                 }
                 R.id.suwonHwaseong -> {
                     if(binding.suwonHwaseong.isChecked) {
                         binding.areaChoiceRadioGroupLine1.clearCheck()
                         binding.areaChoiceRadioGroupLine2.clearCheck()
+                        binding.areaChoiceRadioGroupLine4.clearCheck()
+                    }
+                }
+
+            }
+        }
+        binding.areaChoiceRadioGroupLine4.setOnCheckedChangeListener{ group, checkedId ->
+            when(checkedId){
+                R.id.seongnam -> {
+                    if(binding.seongnam.isChecked) {
+                        binding.areaChoiceRadioGroupLine1.clearCheck()
+                        binding.areaChoiceRadioGroupLine2.clearCheck()
+                        binding.areaChoiceRadioGroupLine3.clearCheck()
+                    }
+                }
+                R.id.jeonju -> {
+                    if(binding.jeonju.isChecked) {
+                        binding.areaChoiceRadioGroupLine1.clearCheck()
+                        binding.areaChoiceRadioGroupLine2.clearCheck()
+                        binding.areaChoiceRadioGroupLine3.clearCheck()
                     }
                 }
                 R.id.jeju -> {
                     if(binding.jeju.isChecked) {
                         binding.areaChoiceRadioGroupLine1.clearCheck()
                         binding.areaChoiceRadioGroupLine2.clearCheck()
+                        binding.areaChoiceRadioGroupLine3.clearCheck()
                     }
                 }
             }
