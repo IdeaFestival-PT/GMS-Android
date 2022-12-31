@@ -1,8 +1,6 @@
 package com.project.gms.Interface
 
-import com.project.gms.DTO.ClientDTO
-import com.project.gms.DTO.EmailSendDTO
-import com.project.gms.DTO.LogInDTO
+import com.project.gms.DTO.*
 import retrofit2.Call
 import retrofit2.http.*
 
@@ -25,4 +23,11 @@ interface SignUpService{
     @Headers("Content-Type: application/json")
     @POST("/member/login")
     fun loginInfo(@Body loginInfo: LogInDTO): Call<Unit>
+
+    @Headers("Content-Type: application/json")
+    @GET("/restaurant/search")
+    fun serchInfo(
+        @Query("location") location: String,
+        @Query("category") category: Category
+    ): Call<List<ResultDTO>>
 }

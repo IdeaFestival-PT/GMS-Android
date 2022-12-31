@@ -15,10 +15,6 @@ class ReLoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        val reLoginId = binding.reLoginIdEditText.text.toString()
-        val reLoginEmail = binding.reLoginEmailEditText.text.toString()
-        val reLoginReSetPassword = binding.reLoginReSetPasswordEditText.text.toString()
-        val reLoginCheckPassword = binding.reLoginCheckPasswordEditText.text.toString()
 
         binding.loginBtn.setOnClickListener {
             val intent = Intent(this, SearchActivity::class.java)

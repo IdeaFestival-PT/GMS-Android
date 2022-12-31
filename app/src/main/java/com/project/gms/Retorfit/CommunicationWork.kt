@@ -5,11 +5,10 @@ import android.content.Intent
 import android.util.Log
 import androidx.core.os.bundleOf
 import androidx.navigation.fragment.findNavController
-import com.project.gms.DTO.ClientDTO
-import com.project.gms.DTO.EmailSendDTO
-import com.project.gms.DTO.LogInDTO
+import com.project.gms.DTO.*
 import com.project.gms.LoginActivity
 import com.project.gms.R
+import com.project.gms.RestaurantRecyclerViewActivity
 import com.project.gms.Retorfit.RetrofitAPI
 import com.project.gms.SearchActivity
 import com.project.gms.fragment.SignUpFragment1
@@ -65,8 +64,10 @@ class CommunicationWork() {
                     if (response.isSuccessful){
                         val result = response.body()
                         Log.d("통신 성공", "$result")
+                        Log.d("성공", "$clientInfo")
                         val intent = Intent(context, LoginActivity::class.java)
                         context?.startActivity(intent)
+
                     }
                 }
 
@@ -86,6 +87,7 @@ class CommunicationWork() {
                     if (response.isSuccessful) {
                         val result = response.body()
                         Log.d("통신 성공", "$result")
+                        Log.d("성공","$loginInfo")
                         val intent = Intent(context, SearchActivity::class.java)
                         context.startActivity(intent)
                     }
@@ -96,6 +98,29 @@ class CommunicationWork() {
                 }
             })
 
+    }
+
+    fun searchInfoSend(category: Category, location: String , context: Context){
+        val service = RetrofitAPI.emgMedService
+
+        service.serchInfo(category = category, location =  location)
+            .enqueue(object : retrofit2.Callback<List<ResultDTO>>{
+                override fun onResponse(call: Call<List<ResultDTO>>, response: Response<List<ResultDTO>>) {
+                    if (response.isSuccessful){
+                        val result = response.body()
+                        Log.d("통신 성공", "$result")
+                        val intent = Intent(context, RestaurantRecyclerViewActivity::class.java)
+                        context.startActivity(intent)
+                    } else {
+                       Log.d("통신 실패", "${response}, ${response.code()}")
+                        Log.d("실패", "${category}, ${location}")
+                    }
+                }
+
+                override fun onFailure(call: Call<List<ResultDTO>>, t: Throwable) {
+                    Log.d("통신 실패", t.message.toString())
+                }
+            })
     }
 }
 

@@ -1,15 +1,10 @@
 package com.project.gms
 
-import android.content.Context
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.view.ViewGroup
-import androidx.recyclerview.widget.RecyclerView
-import com.project.gms.databinding.ActivityViewRecyclerRestaurantBinding
+import android.util.Log
 import android.view.LayoutInflater
-import android.widget.ImageView
-import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import com.project.gms.databinding.ActivityViewRecyclerRestaurantBinding
 
 class RestaurantRecyclerViewActivity : AppCompatActivity() {
     private lateinit var binding: ActivityViewRecyclerRestaurantBinding
@@ -17,6 +12,7 @@ class RestaurantRecyclerViewActivity : AppCompatActivity() {
         binding = ActivityViewRecyclerRestaurantBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+        Log.d("TAG","인텐트 성공")
 
         val restaurantList = mutableListOf<Restaurant>()
 
