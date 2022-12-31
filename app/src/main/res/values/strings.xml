@@ -6,6 +6,7 @@
     <string name="login">로그인</string>
     <string name="sign">회원가입</string>
     <string name="setPassword">비밀번호 설정</string>
+    <string name="pastPassword">이전 비밀번호</string>
     <string name="resetPassword">비밀번호 재설정</string>
     <string name="checkPassword">비밀번호 확인</string>
     <string name="sendNumber">인증번호 발송</string>

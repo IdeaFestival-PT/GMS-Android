@@ -79,7 +79,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/edittext_box"
-        android:hint="@string/id"
+        android:hint="@string/pastPassword"
         android:paddingStart="20dp"
         android:textColorHint="@color/gray"
         android:textSize="20dp"
@@ -119,11 +119,11 @@
 
     <!-- reLoginEmailEditText -->
     <EditText
-        android:id="@+id/reLoginEmailEditText"
+        android:id="@+id/reLoginNewPasswordEditText"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/edittext_box"
-        android:hint="@string/email"
+        android:hint="@string/resetPassword"
         android:paddingStart="20dp"
         android:textColorHint="@color/gray"
         android:textSize="20dp"
@@ -161,55 +161,14 @@
         app:layout_constraintGuide_percent="0.585" />
 
     <!-- reLoginSentNumberBtn -->
-    <Button
-        android:id="@+id/reLoginSentNumberBtn"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@drawable/black_background"
-        android:text="@string/sendNumber"
-        android:textColor="@color/gray2"
-        android:textSize="12dp"
-        app:layout_constraintBottom_toBottomOf="@id/reLoginSentNumberBtnGuideBottom"
-        app:layout_constraintEnd_toEndOf="@id/reLoginSentNumberBtnGuideRight"
-        app:layout_constraintStart_toStartOf="@id/reLoginSentNumberBtnGuideLeft"
-        app:layout_constraintTop_toBottomOf="@id/reLoginSentNumberBtnGuideTop"
-        tools:ignore="TouchTargetSizeCheck" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/reLoginSentNumberBtnGuideLeft"
-        android:layout_width="match_parent"
-        android:layout_height="0.1dp"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.68" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/reLoginSentNumberBtnGuideRight"
-        android:layout_width="match_parent"
-        android:layout_height="0.1dp"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.93" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/reLoginSentNumberBtnGuideTop"
-        android:layout_width="match_parent"
-        android:layout_height="0.1dp"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.534" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/reLoginSentNumberBtnGuideBottom"
-        android:layout_width="match_parent"
-        android:layout_height="0.1dp"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.57" />
 
     <!-- reLoginReSetPasswordEditText -->
     <EditText
-        android:id="@+id/reLoginReSetPasswordEditText"
+        android:id="@+id/reLoginCheckPasswordEditText"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/edittext_box"
-        android:hint="@string/resetPassword"
+        android:hint="@string/checkPassword"
         android:paddingStart="20dp"
         android:textColorHint="@color/gray"
         android:textSize="20dp"
@@ -247,19 +206,6 @@
         app:layout_constraintGuide_percent="0.69" />
 
     <!-- reLoginCheckPasswordEditText -->
-    <EditText
-        android:id="@+id/reLoginCheckPasswordEditText"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@drawable/edittext_box"
-        android:hint="@string/checkPassword"
-        android:paddingStart="20dp"
-        android:textColorHint="@color/gray"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="@id/reLoginCheckPasswordEditTextGuideBottom"
-        app:layout_constraintEnd_toEndOf="@id/reLoginCheckPasswordEditTextGuideRight"
-        app:layout_constraintStart_toStartOf="@id/reLoginCheckPasswordEditTextGuideLeft"
-        app:layout_constraintTop_toBottomOf="@id/reLoginCheckPasswordEditTextGuideTop" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/reLoginCheckPasswordEditTextGuideLeft"
@@ -274,20 +220,6 @@
         android:layout_height="0.1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.96" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/reLoginCheckPasswordEditTextGuideTop"
-        android:layout_width="match_parent"
-        android:layout_height="0.1dp"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.72" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/reLoginCheckPasswordEditTextGuideBottom"
-        android:layout_width="match_parent"
-        android:layout_height="0.1dp"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.794" />
 
     <!-- loginBtn -->
     <Button
