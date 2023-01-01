@@ -2,19 +2,16 @@ package com.project.gms
 
 import android.content.Context
 import android.content.Intent
-import android.graphics.Rect
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-import com.project.gms.DTO.ResultDTO
 import com.project.gms.databinding.ItemRecyclerBinding
 
 class RecyclerViewAdapter(
-    val restaurantList: List<ResultDTO>,
+    val restaurantList: MutableList<Restaurant>,
     val inflater: LayoutInflater,
     val context: Context
 ) : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>() {
@@ -44,9 +41,9 @@ class RecyclerViewAdapter(
         holder.restaurantImage?.setImageDrawable(
             context.resources.getDrawable(R.drawable.gms_logo, context.theme)
         )
-        holder.restaurantName.text = restaurantList.get(position).name
-        holder.restaurantAddress.text = restaurantList.get(position).address
-        holder.restaurantPhoneNumber.text = restaurantList.get(position).contact
+        holder.restaurantName.text = restaurantList.get(position).restaurantName
+        holder.restaurantAddress.text = restaurantList.get(position).restaurantAddress
+        holder.restaurantPhoneNumber.text = restaurantList.get(position).restaurantPhoneNumber
 
         holder.itemView.setOnClickListener {
             val intent = Intent(holder.itemView?.context, RecyclerDetailActivity::class.java)

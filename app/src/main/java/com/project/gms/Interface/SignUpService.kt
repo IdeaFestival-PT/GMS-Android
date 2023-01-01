@@ -24,10 +24,4 @@ interface SignUpService{
     @POST("/member/login")
     fun loginInfo(@Body loginInfo: LogInDTO): Call<Unit>
 
-    @Headers("Content-Type: application/json")
-    @GET("/restaurant/search")
-    fun serchInfo(
-        @Query("category") category: Category,
-        @Query("location") location: String
-    ): Call<List<ResultDTO>>
 }

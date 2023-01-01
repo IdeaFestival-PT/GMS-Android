@@ -99,26 +99,5 @@ class CommunicationWork {
             })
 
     }
-
-    fun searchInfoSend(category: Category, location: String , context: Context){
-        val service = RetrofitAPI.emgMedService
-
-        service.serchInfo(category = category, location =  location)
-            .enqueue(object : retrofit2.Callback<List<ResultDTO>>{
-                override fun onResponse(call: Call<List<ResultDTO>>, response: Response<List<ResultDTO>>) {
-                    if (response.isSuccessful){
-                        val result = listOf(call)
-                        Log.d("통신 성공", "$result")
-                        val intent = Intent(context, RestaurantRecyclerViewActivity::class.java)
-                        context.startActivity(intent)
-                        intent.putExtra("category",category)
-                    }
-                }
-
-                override fun onFailure(call: Call<List<ResultDTO>>, t: Throwable) {
-                    Log.d("통신 실패", t.message.toString())
-                }
-            })
-    }
 }
 
