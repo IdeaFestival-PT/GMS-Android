@@ -27,7 +27,7 @@ interface SignUpService{
     @Headers("Content-Type: application/json")
     @GET("/restaurant/search")
     fun serchInfo(
-        @Query("location") location: String,
-        @Query("category") category: Category
+        @Query("category") category: Category,
+        @Query("location") location: String
     ): Call<List<ResultDTO>>
 }

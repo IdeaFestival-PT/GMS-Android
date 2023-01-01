@@ -4,6 +4,8 @@ import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
+import com.project.gms.DTO.Category
+import com.project.gms.DTO.ResultDTO
 import com.project.gms.databinding.ActivityViewRecyclerRestaurantBinding
 
 class RestaurantRecyclerViewActivity : AppCompatActivity() {
@@ -12,13 +14,16 @@ class RestaurantRecyclerViewActivity : AppCompatActivity() {
         binding = ActivityViewRecyclerRestaurantBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-        Log.d("TAG","인텐트 성공")
+        Log.d("TAG","인텐트 성공 ")
 
-        val restaurantList = mutableListOf<Restaurant>()
+        val restaurantList = mutableListOf<ResultDTO>()
+        restaurantList.add(ResultDTO(name = "광주소프트웨어마이스터고등학교 (한식)", address = "광주광역시 광산구 송정동 상무대로 312", contact = "062-949-6800", imageUrl = "", category = Category.None))
+        restaurantList.add(ResultDTO(name = "광주소프트웨어마이스터고등학교 (한식)", address = "광주광역시 광산구 송정동 상무대로 312", contact = "062-949-6800", imageUrl = "", category = Category.None))
+        restaurantList.add(ResultDTO(name = "광주소프트웨어마이스터고등학교 (한식)", address = "광주광역시 광산구 송정동 상무대로 312", contact = "062-949-6800", imageUrl = "", category = Category.None))
+        restaurantList.add(ResultDTO(name = "광주소프트웨어마이스터고등학교 (한식)", address = "광주광역시 광산구 송정동 상무대로 312", contact = "062-949-6800", imageUrl = "", category = Category.None))
+        restaurantList.add(ResultDTO(name = "광주소프트웨어마이스터고등학교 (한식)", address = "광주광역시 광산구 송정동 상무대로 312", contact = "062-949-6800", imageUrl = "", category = Category.None))
+        restaurantList.add(ResultDTO(name = "광주소프트웨어마이스터고등학교 (한식)", address = "광주광역시 광산구 송정동 상무대로 312", contact = "062-949-6800", imageUrl = "", category = Category.None))
 
-        restaurantList.add(Restaurant("윤밀원(한식)", "주소 : 경기 성남시 분당구 백현로 154", "전화번호 : 031-714-8388"))
-        restaurantList.add(Restaurant("이름", "주소", "전화번호"))
-        restaurantList.add(Restaurant("이름", "주소", "전화번호"))
 
         val recyclerView = binding.list
         recyclerView.adapter = RecyclerViewAdapter(restaurantList, LayoutInflater.from(this), this)
