@@ -1,16 +1,15 @@
 package com.project.gms
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.project.gms.Communication.CommunicationWork
-import com.project.gms.DTO.Category
 import com.project.gms.databinding.ActivitySearchBinding
 import java.util.*
 
 class SearchActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySearchBinding
     var location: String = ""
-    var category: Category = Category.None
+    var categoryS = "None"
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = ActivitySearchBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
@@ -19,6 +18,7 @@ class SearchActivity : AppCompatActivity() {
         val random = Random()
         var num = random.nextInt(4)
 
+        val intent = Intent(this, RestaurantRecyclerViewActivity::class.java)
         when(num){
             0 -> binding.searchBackgroundImage.setImageResource(R.drawable.search_background_image1)
             1 -> binding.searchBackgroundImage.setImageResource(R.drawable.search_background_image2)
@@ -34,57 +34,56 @@ class SearchActivity : AppCompatActivity() {
         }
 
         binding.searchBtn.setOnClickListener {
-            val category = category
-            val location = location
-            val serchDataSend = CommunicationWork()
-            serchDataSend.searchInfoSend(category = category, location = location, context = this)
-
+            val intent = Intent(this, RestaurantRecyclerViewActivity::class.java)
+            intent.putExtra("category", categoryS)
+            intent.putExtra("location", location)
+            this.startActivity(intent)
         }
 
         binding.koreanFoodCheckBox.setOnCheckedChangeListener { buttonView, isChecked ->
             if(isChecked == true){
-                category = Category.KOREA
                 binding.westernFoodCheckBox.isChecked = false
                 binding.chineseFoodCheckBox.isChecked = false
                 binding.japaneseFoodCheckBox.isChecked = false
+                categoryS = "KOREA"
             }
             else if (isChecked == false){
-                category = Category.None
+                categoryS = "None"
             }
         }
 
         binding.chineseFoodCheckBox.setOnCheckedChangeListener { buttonView, isChecked ->
             if(isChecked == true){
-                category = Category.CHINA
                 binding.koreanFoodCheckBox.isChecked = false
                 binding.westernFoodCheckBox.isChecked = false
                 binding.japaneseFoodCheckBox.isChecked = false
+                categoryS = "CHINA"
             }
-            else if(isChecked == false){
-                category = Category.None
+            else if (isChecked == false){
+                categoryS = "None"
             }
         }
         binding.westernFoodCheckBox.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked == true){
-                category = Category.WESTERN
                 binding.koreanFoodCheckBox.isChecked = false
                 binding.chineseFoodCheckBox.isChecked = false
                 binding.japaneseFoodCheckBox.isChecked = false
+                categoryS = "WESTERN"
             }
             else if (isChecked == false){
-                category = Category.None
+                categoryS = "None"
             }
         }
 
         binding.japaneseFoodCheckBox.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked == true){
-                category = Category.JAPAN
                 binding.koreanFoodCheckBox.isChecked = false
                 binding.westernFoodCheckBox.isChecked = false
                 binding.chineseFoodCheckBox.isChecked = false
+                categoryS = "JAPAN"
             }
             else if (isChecked == false){
-                category = Category.None
+                categoryS = "None"
             }
         }
 

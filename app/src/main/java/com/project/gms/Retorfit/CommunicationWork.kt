@@ -16,7 +16,7 @@ import retrofit2.Call
 import retrofit2.Response
 
 
-class CommunicationWork() {
+class CommunicationWork {
     fun sendEmail(emailInfo: EmailSendDTO){
         val service = RetrofitAPI.emgMedService
 
@@ -98,29 +98,6 @@ class CommunicationWork() {
                 }
             })
 
-    }
-
-    fun searchInfoSend(category: Category, location: String , context: Context){
-        val service = RetrofitAPI.emgMedService
-
-        service.serchInfo(category = category, location =  location)
-            .enqueue(object : retrofit2.Callback<List<ResultDTO>>{
-                override fun onResponse(call: Call<List<ResultDTO>>, response: Response<List<ResultDTO>>) {
-                    if (response.isSuccessful){
-                        val result = response.body()
-                        Log.d("통신 성공", "$result")
-                        val intent = Intent(context, RestaurantRecyclerViewActivity::class.java)
-                        context.startActivity(intent)
-                    } else {
-                       Log.d("통신 실패", "${response}, ${response.code()}")
-                        Log.d("실패", "${category}, ${location}")
-                    }
-                }
-
-                override fun onFailure(call: Call<List<ResultDTO>>, t: Throwable) {
-                    Log.d("통신 실패", t.message.toString())
-                }
-            })
     }
 }
 
